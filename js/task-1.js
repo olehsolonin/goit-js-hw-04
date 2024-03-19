@@ -3,15 +3,17 @@ function isEnoughCapacity(products, containerSize) {
 	let total = 0;
 
 
-	for (let product in values) {
-		total = total + product;
+	for (let value of values) {
+		total = total + value;
 	}
-	if (total >= containerSize) {
+
+	if (total <= containerSize) {
 		return true;
 	}
-	else {
-		return false;
-	}
+	// else {
+	// 	return false;
+	// }
+	return false;
 }
 
 
